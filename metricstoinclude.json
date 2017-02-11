@@ -1,0 +1,6 @@
+{
+  "metrics_to_include": [
+    "metric.example1",
+    "metric.example2"
+  ]
+}
