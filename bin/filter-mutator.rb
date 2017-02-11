@@ -1,10 +1,19 @@
 #!/usr/bin/env ruby
-#
+# DESCRIPTION:
 # This mutator filters the check output of each event
 # and keeps only the ones that have partial contain included in the json file
-# Copyright 2017 Nikoletta Kyriakidou & Hyane Moussassa (https://github.com/Kidinicol/sensu-mutator-graphite.git)
-# Released under the same terms as Sensu (the MIT license); see LICENSE
-# for details.
+#
+# OUTPUT:
+# filtered
+# @event['check']['output']
+#
+# DEPENDENCIES:
+#   gem: sensu-mutator
+#
+# LICENSE:
+#  Copyright 2017 Nikoletta Kyriakidou & Hyane Moussassa (https://github.com/Kidinicol/sensu-mutator-graphite.git)
+#  Released under the same terms as Sensu (the MIT license); see LICENSE
+#  for details.
 require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'json'
 require 'sensu-mutator'

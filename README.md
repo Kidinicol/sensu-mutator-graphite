@@ -1,4 +1,7 @@
 # sensu-mutator-graphite
+[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-sensu.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-sensu)
+
+
 Using this mutator you can filter the check output metrics you want
 
 Use handler with filter mutator
