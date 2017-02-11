@@ -44,6 +44,7 @@ class MutatorGraphite < Sensu::Mutator
     @event[:mutated] = true
     @event['check']['output'] = cpu_metrics.join("\n")
   end
+
   def dump
     puts @event['check']['output']
   end
@@ -51,9 +52,8 @@ class MutatorGraphite < Sensu::Mutator
   def should_metric_be_included(metrics_to_include, metric)
     metrics_to_include.each do |metric_to_include|
       if metric.match(metric_to_include)
-       return true
+        return true
       end
     end
-    return false
   end
 end
