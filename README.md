@@ -2,6 +2,7 @@
 Using this mutator you can filter the check output metrics you want
 
 Use handler with filter mutator
+```json
 {
   "handlers": {
     "graphite": {
@@ -14,9 +15,9 @@ Use handler with filter mutator
     }
   }
 }
-
-Add a json file with the filter-mutator 
-
+```
+Add a json file with the filter-mutator
+```json
 {
   "mutators": {
     "filter-mutator": {
@@ -24,3 +25,4 @@ Add a json file with the filter-mutator
     }
   }
 }
+```
