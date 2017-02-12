@@ -1,5 +1,5 @@
 # sensu-mutator-graphite
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-sensu.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-sensu)
+[![Build Status](https://travis-ci.org/Kidinicol/sensu-mutator-graphite.svg?branch=master)](https://travis-ci.org/Kidinicol/sensu-mutator-graphite)
 
 
 Using this mutator you can filter the check output metrics you want

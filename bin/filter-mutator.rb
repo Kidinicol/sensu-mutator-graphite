@@ -33,16 +33,16 @@ class MutatorGraphite < Sensu::Mutator
 
     all_metrics = @event['check']['output'].split("\n")
 
-    cpu_metrics = []
+    mutated_metrics = []
     all_metrics.each do |metric|
       if should_metric_be_included(metrics_to_include, metric)
-        cpu_metrics.push(metric)
+        mutated_metrics.push(metric)
       end
     end
 
     # Add a key/value pair to indicate that the event data has been mutated.
     @event[:mutated] = true
-    @event['check']['output'] = cpu_metrics.join("\n")
+    @event['check']['output'] = mutated_metrics.join("\n")
   end
 
   def dump
