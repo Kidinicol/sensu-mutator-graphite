@@ -1,4 +1,7 @@
-
+Style/BlockLength:
+  Exclude:
+    - 'sensu-mutator-graphite.gemspec'
+    - '**/*.gemspec'
 MethodLength:
   Max: 200
 

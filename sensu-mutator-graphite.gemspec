@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description            = 'This mutator provides filtering Sensu metrics.'
   s.email                  = 'nk8smg@hotmail.com'
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
-  s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE.md README.md CHANGELOG.md)
+  s.files                  = Dir.glob('{bin,lib}/**/*') + %w[LICENSE.md README.md CHANGELOG.md]
   s.homepage               = 'https://github.com/Kidinicol/sensu-mutator-graphite'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => 'Nikoletta Kyriakidou',
@@ -36,9 +36,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   s.add_development_dependency 'github-markup',             '~> 1.3'
   s.add_development_dependency 'pry',                       '~> 0.10'
-  s.add_development_dependency 'rubocop',                   '~> 0.40.0'
+  s.add_development_dependency 'rubocop',                   '~> 0.49.0'
   s.add_development_dependency 'rspec',                     '~> 3.1'
   s.add_development_dependency 'rake',                      '~> 10.0'
   s.add_development_dependency 'redcarpet',                 '~> 3.2'
-  s.add_development_dependency 'yard',                      '~> 0.8'
+  s.add_development_dependency 'yard',                      '~> 0.9.11'
 end
