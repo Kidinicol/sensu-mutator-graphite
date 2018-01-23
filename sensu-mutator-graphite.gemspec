@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description            = 'This mutator provides filtering Sensu metrics.'
   s.email                  = 'nk8smg@hotmail.com'
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
-  s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE.md README.md CHANGELOG.md)
+  s.files                  = Dir.glob('{bin,lib}/**/*') + %w[LICENSE.md README.md CHANGELOG.md]
   s.homepage               = 'https://github.com/Kidinicol/sensu-mutator-graphite'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => 'Nikoletta Kyriakidou',
