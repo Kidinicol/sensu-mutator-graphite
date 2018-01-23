@@ -2,8 +2,6 @@ Style/BlockLength:
   Exclude:
     - 'sensu-mutator-graphite.gemspec'
     - '**/*.gemspec'
-    - 'Rakefile'
-    - '**/*.rake'
 MethodLength:
   Max: 200
 
